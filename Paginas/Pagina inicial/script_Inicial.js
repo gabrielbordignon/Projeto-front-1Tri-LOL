@@ -1,3 +1,3 @@
 function FazerLogin() {
-    window.location.href = 'pagina_login.html'
+    window.location.href = '../Login/pagina_login.html'
 }
