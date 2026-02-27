@@ -1,17 +1,33 @@
 body {
-  background-color: rgb(152,218,229, 1);
+  background-color: rgba(152,218,229, 1);
+  margin: 0px;
+}
+.Conteiner {
+    display: grid;
+    width: 500px;
+    height: 400px;
+    margin: 250px auto;
+    border-radius: 22px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 4px 0px 10px 15px rgba(0, 0, 0, 0.1);
+    border: 1px rgba(0, 0, 0, 0.001);
 }
 .titulo-login {
-     ;
     margin: 0px 50px ;
 }
-.usuario {
-    height: 23px; ;width: 200px;
+.Entrada_Usuario {
+    padding: 15px ;
+    width: 300px;
+    border-radius: 15px;
+    border: solid 3px rgb(152,218,229, 1);
 }
-.senha {
-    height: 25px; ;width: 200px;
+.password {
+    padding: 15px;
 }
-.botao_sessao { 
+.botao { 
     background-color: rgba(50, 162, 218, 1);
     padding: 15px;
     border: none;
@@ -23,9 +39,3 @@ body {
     cursor: pointer;
     margin : 20px 0px;
 }
-.teste{display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    height: 90vh;} 
-    
