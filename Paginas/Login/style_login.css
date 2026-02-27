@@ -1,3 +1,31 @@
 body {
-  background-color: rgba(152,218,229,1);
+  background-color: rgb(152,218,229, 1);
 }
+.titulo-login {
+     ;
+    margin: 0px 50px ;
+}
+.usuario {
+    height: 23px; ;width: 200px;
+}
+.senha {
+    height: 25px; ;width: 200px;
+}
+.botao_sessao { 
+    background-color: rgba(50, 162, 218, 1);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 26px;
+    font-family: "archivo black", sans-serif;
+    color: white;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin : 20px 0px;
+}
+.teste{display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 90vh;} 
+    
