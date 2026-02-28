@@ -1,1 +1,116 @@
+body {
+    margin: 0px;
+    background-color: rgba(152,218,229, 1);
+}
 
+.Conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin: 30px auto;
+    padding-bottom: 20px;
+    border-radius: 22px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 4px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px rgba(0, 0, 0, 0.001);
+}
+
+.Conteiner-top {
+    display: flex;
+    flex-direction:row;
+}
+
+.Nome_lav {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 50px;
+    margin: 0px auto 20px 10px ;
+    font-size: 30px;
+    color: rgba(0, 51, 255, 0.65);
+    cursor: default;
+}
+
+.sub-texto {
+    color: rgb(8, 58, 104);
+    font-size: 20px;
+    font-family: "archivo black", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: default;
+}
+
+.Mensagem {
+    font-family: "archivo black", sans-serif;
+    font-size: 13px !important;
+    color: rgb(30, 54, 80);
+    font-size: 15px;
+    cursor: default;
+}
+
+.Nome {
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+.Sobrenome {
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+
+.CPF {
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+
+.Email {
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+
+.endereco {
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+
+.Telefone {
+    padding: 15px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+
+.botao {
+    background-color: rgba(50, 162, 218, 1);
+    width: 277px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: "archivo black", sans-serif;
+    color: white;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: rgb(2, 130, 194);
+}

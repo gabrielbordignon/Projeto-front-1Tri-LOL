@@ -8,6 +8,7 @@ body {
     width: 500px;
     height: 600px;
     margin: 150px auto;
+    padding-bottom: 10px;
     border-radius: 22px;
     background-color: white;
     justify-content: center;
@@ -47,11 +48,12 @@ img {
 .NTC {
     font-family: "Archivo Black", sans-serif;
     font-size: 13px;
-    color: rgba(0, 0, 0, 0.50);
+    color: rgb(43, 63, 86);
 }
 
 a {
-    color: rgba(0, 0, 0, 0.90);
+    margin-top: -5px;
+    color: rgb(9, 104, 186);
     text-decoration: none;
     cursor: pointer;
 }
