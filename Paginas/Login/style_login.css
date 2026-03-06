@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 430px;
-    margin: 130px auto;
+    height: 380px;
+    margin: 260px auto;
     border-radius: 22px;
     background-color: white;
     justify-content: center;
@@ -34,27 +34,11 @@ img {
 
 .titulo-login {
     font-family: "JetBrains Mono", monospace;
-    margin: 0px auto 20px auto ;
+    margin: 0px auto 10px auto ;
     font-size: 30px;
     color: rgba(0, 51, 255, 0.65);;
 }
 
-.subtexto {
-    color: #083a68;
-    font-size: 20px;
-    font-family: "archivo black", sans-serif;
-    margin-top: -30px;
-    margin-bottom: 0px;
-    cursor: default;
-}
-
-.mensagem {
-    font-family: "archivo black", sans-serif;
-    font-size: 13px !important;
-    color: #1e3650;
-    font-size: 15px;
-    cursor: default;
-}
 
 .Entrada_Usuario {
     padding: 15px;
@@ -81,6 +65,8 @@ img {
 
 .checkbox {
    cursor: pointer;
+   margin-right: 50px;
+   margin-top: 5px;
 
 }
 
@@ -89,8 +75,7 @@ img {
     font-size: 11px;
     color: rgb(67, 89, 106);
     cursor:default;
-    margin-left: -2px;
-    margin-top: 10px;
+    margin: 15px 160px 12px -45px;
 }
 
 .Link_EsqueciSenha {
