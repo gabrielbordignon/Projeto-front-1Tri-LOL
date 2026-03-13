@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: #1e60c0;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+a:hover{
+    margin-left: 23px;
+    margin-right: -2px;
+    background-color: rgb(0, 140, 255);
+    color: rgb(255, 255, 255);
+    padding-top: 27px ;
+    padding-left: 2px;
+    padding-right: 2px;
+    animation-delay: 0.3ms;
+    padding-bottom: 27px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.445);
+}
+
+.Nome_Lavandeira {
+    color: rgba(0, 51, 255, 0.65);
+    font-family: "JetBrains Mono", monospace;
+    border: solid 2px white;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+
+nav a {
+    color: #e6effa;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -30px;
+    margin-left: -10px;
+}
+
+/* TITULO */
+.titulo {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/* FILTROS */
+.filtros {
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.filtros button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    margin-right: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filtros button:hover {
+    background: #f0f3f3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+}
+
+.Conteiner_Pedidos {
+    display: flex;
+    flex: 0.70;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 900px;
+    padding: 30px;
+    border-radius: 15px; 
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.08);   
+}
+
+/* CARD PEDIDO */
+.pedido {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.08);
+}
+
+.info {
+    max-width: 60%;
+}
+
+.numero {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.data {
+    font-size: 13px;
+    color: #777;
+}
+
+.pecas {
+    margin-top: 5px;
+}
+
+/* STATUS */
+.status {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.aberto {
+    background: #d4f5d2;
+    color: #1f7a1f;
+}
+
+.processo {
+    background: #ffe7c2;
+    color: #c47c00;
+}
+
+.pronto {
+    background: #d3e6ff;
+    color: #1d4ed8;
+}
+
+.cancelado {
+    background: #ffd6d6;
+    color: #b30000;
+}
+
+/* LADO DIREITO */
+.direita {
+    text-align: right;
+}
+
+.valor {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* BOTÕES */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-detalhes {
+    background-color: #2c6ed5;
+    color: white;
+}
+
+.btn-cancelar {
+    background: #d9534f;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.conteiner_resumo {
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Resumo {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    margin: 40px;
+    height: auto;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Titulo_Resumo {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Resumo_p {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+    margin-right: 40px;
+    justify-content: space-between;
+}
+
+.Resumo hr {
+    margin: 0px;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 30px ;
+    width: 90%;
+    align-self: center;
+    border-color: rgba(255, 255, 255, 0.24);
+}
+
+.Cancelar_Resumo {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin: 40px;
+    height: auto;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(235, 242, 252);
+}
+
+.Cancelar_Resumo h1 {
+    font-size:22px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.Cancelar_Resumo button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #2c6ed5;
+    color: white
+}
+
+.Cancelar_Resumo button:hover{
+    opacity: 0.9;
+}
+
+.Suporte_Resumo {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin: 40px;
+    height: auto;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(235, 242, 252);
+}
+
+.Suporte_Resumo h1 {
+    font-size:22px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.Suporte_Resumo button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #2c6ed5;
+    color: white
+}
+
+.Suporte_Resumo button:hover {
+    opacity: 0.9;
+}
