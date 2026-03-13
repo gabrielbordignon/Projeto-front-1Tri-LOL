@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Painel do Cliente - LavaExpress</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="Nome_Lavandeira">Lavanderia On-Line</h1>
+        <div class="Page_select">
+            <nav>
+            <a class="Inicio" href="#">Início</a> 
+            <a href="#">Fazer Pedido</a> 
+            <a href="#">Suporte</a> </nav>
+        </div>    
+    </header>
+    <div class="titulo">Meus Pedidos</div>
+    <div class="filtros"> 
+        <button>Todos</button> 
+        <button>Abertos</button> 
+        <button>Em Processo</button>
+        <button>Prontos</button> 
+        <button>Cancelados</button> 
+    </div>
+    <div class="container"> 
+        
+        <div class="Conteiner_Pedidos">
+            <div class="pedido">
+                <div class="info">
+                    <div class="numero"> Pedido #1023 
+                        <span class="status aberto">ABERTO</span>
+                    </div>
+                    <div class="data"> 24/04/2024 - 14:30 </div>
+                    <div class="pecas"> 3 Camisas, 2 Calças, 1 Vestido </div>
+                </div>
+                <div class="direita">
+                    <div class="valor"> R$ 45,00 </div> 
+                    <button class="btn btn-detalhes">Ver Detalhes</button> 
+                    <button class="btn btn-cancelar">Cancelar</button>
+                </div>
+            </div> <!-- PEDIDO 2 -->
+            <div class="pedido">
+                <div class="info">
+                    <div class="numero"> Pedido #1018 <span class="status pronto">PRONTO</span> </div>
+                    <div class="data"> 20/04/2024 </div>
+                    <div class="pecas"> 5 Toalhas, 1 Cobertor </div>
+                </div>
+                <div class="direita">
+                    <div class="valor"> R$ 55,00 </div> <button class="btn btn-detalhes">Ver Detalhes</button>
+                </div>
+            </div> <!-- PEDIDO 3 -->
+            <div class="pedido">
+                <div class="info">
+                    <div class="numero"> Pedido #1009 <span class="status processo">EM PROCESSO</span> </div>
+                    <div class="data"> 15/04/2024 </div>
+                    <div class="pecas"> 4 Camisetas, 3 Shorts </div>
+                </div>
+                <div class="direita">
+                    <div class="valor"> R$ 38,00 </div> <button class="btn btn-detalhes">Ver Detalhes</button>
+                </div>
+            </div> <!-- PEDIDO 4 -->
+            <div class="pedido">
+                <div class="info">
+                    <div class="numero"> Pedido #1002 <span class="status cancelado">CANCELADO</span> </div>
+                    <div class="data"> 10/04/2024 </div>
+                    <div class="pecas"> 2 Blusas, 1 Jaqueta </div>
+                </div>
+                <div class="direita">
+                    <div class="valor"> R$ 25,00 </div> <button class="btn btn-detalhes">Ver Detalhes</button>
+                </div>
+            </div>
+        </div> 
+        <div class="conteiner_resumo">
+            <div class="Resumo">
+                <h1 class="Titulo_Resumo">Resumo do Cliente</h1>
+                <hr>
+                <p>Pedidos Totais:</p> <p>4</p>
+                <hr>
+                <p>Pedidos Abertos:</p> <p>1</p>
+                <hr>
+                <p>Pedidos Cancelados</p> <p>1</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
