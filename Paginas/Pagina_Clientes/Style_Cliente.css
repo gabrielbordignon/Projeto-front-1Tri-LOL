@@ -305,3 +305,9 @@ nav a {
 .Suporte_Resumo button:hover {
     opacity: 0.9;
 }
+
+#FazerPedido {
+    display: none;
+    width: 90vh;
+    height: 80vh;
+}
