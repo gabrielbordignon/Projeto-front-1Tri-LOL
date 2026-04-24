@@ -1,15 +1,22 @@
-function toggle(el, Resumo, Pedidos) {
-    var display2 = document.getElementById(Resumo).style.display
-    var display3 = document.getElementById(Pedidos).style.display
-    var display = document.getElementById(el).style.display
-    if (display == 'none' && display2 == 'flex' && display3 == 'flex') {
-        document.getElementById(Resumo).style.display = 'none';
-        document.getElementById(Pedidos).style.display = 'none';
-        document.getElementById(el).style.display = 'flex';
-    }
-    else if ( display == "flex" && display2 == 'none' && display3 == 'none') {
-        document.getElementById(Resumo).style.display = 'flex';
-        document.getElementById(Pedidos).style.display = 'flex';
-        document.getElementById(el).style.display = 'none';
-    }
-} 
+document.getElementById('btnAdicionar').addEventListener('click', function() {
+            const container = document.getElementById('container-pecas');
+            
+            // Seleciona a primeira linha para servir de modelo para o clone
+            const primeiraLinha = container.querySelector('.peca-item');
+            const novaLinha = primeiraLinha.cloneNode(true);
+            
+            // Limpa os campos da nova linha
+            novaLinha.querySelectorAll('input').forEach(input => input.value = '');
+            novaLinha.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
+            
+            // Mostra o botão "Remover" apenas na nova linha
+            const btnRemover = novaLinha.querySelector('.btn-remover');
+            btnRemover.style.display = 'block';
+
+            container.appendChild(novaLinha);
+        });
+
+        function removerLinha(botao) {
+            // Remove a linha pai do botão clicado
+            botao.closest('.peca-item').remove();
+        }

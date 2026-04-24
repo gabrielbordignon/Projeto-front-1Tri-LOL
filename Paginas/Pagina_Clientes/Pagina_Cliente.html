@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <title>Lavanderia On-Line</title>
     <link rel="shortcut icon" href="../../Images/Lavandeira.ico" type="image/x-icon">
-    <link rel="stylesheet" href="Style_Cliente.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend+Exa:wght@100..900&display=swap"
         rel="stylesheet">
-    <script src="Pagina_clientes.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Style_Cliente.css">
+    <script src="Pagina_clientes.js" defer></script>
 </head>
 
 <body>
@@ -19,9 +28,11 @@
         <h1 class="Nome_Lavandeira">Lavanderia On-Line</h1>
         <div class="Page_select">
             <nav>
-                <a class="Inicio" href="#">Início</a>
-                <button onclick="toggle('FazerPedido')">Fazer Pedido</a>
-                <a href="#">Suporte</a>
+                <button class="Inicio" href="#">Início</button>
+                <button type="button" class="FazerPedido btn" data-bs-toggle="modal" data-bs-target="#modalPedido">
+                    Fazer Pedido
+                </button>
+                <button href="#">Suporte</button>
             </nav>
         </div>
     </header>
@@ -33,7 +44,7 @@
         <button>Prontos</button>
         <button>Cancelados</button>
     </div>
-    <div class="container">
+    <div class="conteiner">
 
         <div id="Pedidos" class="Conteiner_Pedidos">
             <div class="pedido">
@@ -82,8 +93,8 @@
             </div>
         </div>
         <div id="Resumo" class="conteiner_resumo">
-            
-            
+
+
             <div class="Resumo">
                 <h1 class="Titulo_Resumo">Resumo do Cliente</h1>
                 <hr>
@@ -113,10 +124,57 @@
                 <button>Falar Com Suporte</button>
             </div>
         </div>
-        <div id="FazerPedido">
-            <h1>fazdsafds</h1>
+    </div>
+    <div class="Div_Fazer_Pedido">
+
+        <div class="modal fade" id="modalPedido" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Novo Pedido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="formPedido">
+                            <div id="container-pecas">
+                                <!-- Primeira Linha (O botão remover começa escondido aqui) -->
+                                <div class="row g-3 mb-3 align-items-end peca-item">
+                                    <div class="col-md-7">
+                                        <label class="form-label">Peça</label>
+                                        <select class="form-select" required>
+                                            <option value="" selected disabled>Selecione a peça...</option>
+                                            <option value="1">Calça</option>
+                                            <option value="2">Camisetas</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Qtd.</label>
+                                        <input type="number" class="form-control" placeholder="0" min="1" required>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-outline-danger w-100 btn-remover"
+                                            onclick="removerLinha(this)" style="display: none;">
+                                            Remover
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-sm btn-outline-secondary mt-2" id="btnAdicionar">
+                                + Adicionar mais uma peça
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="submit" form="formPedido" class="btn btn-success">Confirmar Pedido</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-s
+
 </html>
