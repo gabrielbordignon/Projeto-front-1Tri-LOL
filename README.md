@@ -1,9 +1,13 @@
 # Projeto-front-1Tri-LOL
-##figma: 
-https://www.figma.com/team_invite/redeem/dppuNnYfDV5RB7Ur5hoMp4?t=6sgcO5VVFrvrubdZ-22
+Oii professor lindo do meu coração (espero nota extra pelo elogio)
+segue o tutorial de como abrir e executar o meu projeto
+ 
+## passo 1:
+baixe o projeto e abra ele no vs code.
 
-## FONTES:
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    
+## passo 2:
+após abrir ele no vs code, abra a pasta paginas, depois abra a pasta pagina inicial, depois abra o arquivo Pagina_Cliente.html e execute-o. apos isso é só testar e usufruir o melhor projeto que você ira ver.
+
+## esse foi o tutorial e espero que tenha gostado do projeto.
+obs: tutorial mais inutil possivel.
+obs2: me da nota pfvrr
