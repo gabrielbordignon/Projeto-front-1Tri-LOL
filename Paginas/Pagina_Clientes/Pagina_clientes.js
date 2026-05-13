@@ -57,7 +57,9 @@ function verificarAtualizacoesFunc() {
         for (var i = 0; i < todosPedidos.length; i++) {
             if (todosPedidos[i].id === pc.id) { pf = todosPedidos[i]; break; }
         }
-        if (pf && pf.status !== pc.status) {
+        // Só sincroniza status se o pedido pertence ao mesmo cliente
+        // (evita colisão de IDs entre clientes diferentes)
+        if (pf && pf.cliente === pc.cliente && pf.status !== pc.status) {
             pc.status = pf.status;
             atualizado = true;
         }
@@ -230,8 +232,17 @@ function confirmarPedido() {
     }
 
     var pedidos = carregarPedidos();
+    // Gera ID único global: verifica todos os pedidos de todos os clientes e do funcionário
     var maiorId = 1000;
-    pedidos.forEach(function(p){ if (p.id > maiorId) maiorId = p.id; });
+    for (var k = 0; k < localStorage.length; k++) {
+        var key = localStorage.key(k);
+        if (key && key.indexOf('pedidos_') === 0) {
+            try {
+                var lista = JSON.parse(localStorage.getItem(key) || '[]');
+                lista.forEach(function(p){ if (p.id > maiorId) maiorId = p.id; });
+            } catch(e) {}
+        }
+    }
 
     var agora = new Date();
     var data  = agora.toLocaleDateString('pt-BR') + ' - ' + agora.toLocaleTimeString('pt-BR', {hour:'2-digit',minute:'2-digit'});
