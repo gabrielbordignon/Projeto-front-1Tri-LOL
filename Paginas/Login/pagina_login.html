@@ -7,7 +7,7 @@
     <title>Lavanderia Online</title>
     <link rel="stylesheet" href="style_login.css">
     <link rel="shortcut icon" href="../../Images/Lavandeira.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
 </head>
@@ -19,18 +19,21 @@
             <h1 class="titulo-login">Lavanderia On-Line</h1>
         </div>
         <hr>
-        <input id= "Usuario" class="Entrada_Usuario" type="text" placeholder="Email">
+        <input id="Usuario" class="Entrada_Usuario" type="text" placeholder="Email">
         <input id="password" class="password" type="password" placeholder="senha ">
+        <span id="erro-login" style="color:#c0392b;font-size:12px;font-family:'Archivo Black',sans-serif;display:none;margin-top:4px;"></span>
         <div class="sub">
-            <input class="checkbox" type="checkbox" >
+            <input class="checkbox" type="checkbox">
             <p class="Lembrar">Lembrar de Mim</p>
         </div>
         <button id="botao" class="botao" type="submit">Iniciar sessão</button>
         <div class="foot">
-            <p class="NTC">Não tem conta?</p> 
+            <p class="NTC">Não tem conta?</p>
             <a class="Cadastro" href="../Cadastro/Pagina_Cadastro.html">Cadastre-se</a>
         </div>
     </div>
+
+    <script src="Pagina_Login.js"></script>
 </body>
 
 </html>
